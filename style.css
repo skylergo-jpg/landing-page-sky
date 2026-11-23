@@ -1,104 +1,133 @@
-
+/* =========================
+   RESET & GLOBAL STYLES
+========================= */
 * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-li, a{
-  
+body {
+    background-color: #000000;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+li,
+a {
     color: #ffffff;
-    text-decoration: none;
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
+    font-family: "JetBrains Mono", monospace;
 }
 
-.phero{
+h1 {
+    color: #ffffff;
+    font-size: 90px;
+    line-height: 1;
+    margin-right: 250px;
+    font-family: "Fraunces", sans-serif;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 1;
+    text-align: left;
+    font-family: "Fraunces", sans-serif;
+    text-decoration: none;
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 1;
+    text-align: right;
+    font-family: "Fraunces", sans-serif;
+    text-decoration: none;
+}
+
+.highlight {
+    color: #04ae01;
+    font-style: italic;
+}
+
+/* =========================
+   PARAGRAPHS
+========================= */
+.phero {
     color: #ffffff;
     font-size: 16px;
-    text-decoration: none;
     margin-left: 5px;
     margin-right: 250px;
     text-align: justify;
     font-style: italic;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.pabout{
+.pabout {
     color: #ffffff;
-    font-size: 20px;
-    text-decoration: none;
-    margin-left: 250px;
-    margin-right: 10px;
+    font-size: 17px;
+    margin-right: 380px;
     text-align: justify;
-    font-style: italic;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-h1{
-    transition: all 0.3s ease 0s;
-    line-height: 1;
+.pservices {
     color: #ffffff;
-    font-size:90px;
-    text-decoration: none;
-    font-family: michroma;
+    font-size: 17px;
+    margin-left: 380px;
+    text-align:right;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 
-h1:hover{
-    font-size: 100px;
-    transition: all 0.3s ease 0s;
-    color: #00a906;
-}
-
-
+/* =========================
+   HEADER & NAVIGATION
+========================= */
 header {
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 3px 10%;
-        width: 100%;
-        height: 90px;
-        z-index: 6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 10%;
+    width: 100%;
+    height: 90px;
+    z-index: 6;
 }
 
-
-body{
-    background-color: #000000;
+.navbar {
+    background-color: #131313;
 }
 
-.logo{
- cursor: pointer;
- margin-right: auto;
+.logo {
+    cursor: pointer;
+    margin-right: auto;
 }
 
-.navbar{
-   background-color: #131313;
+.nav_links {
+    list-style: none;
 }
 
-.nav_links{
- list-style: none;
+.nav_links li {
+    display: inline-block;
+    padding: 0 20px;
 }
 
-.nav_links li{
- display: inline-block;
- padding: 0px 20px;
+.nav_links li a {
+    transition: all 0.3s ease;
 }
 
-.nav_links li a{
- transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover{
- transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover{
+.nav_links li a:hover {
     padding: 9px 25px;
     color: #000000;
     background-color: #00a906;
@@ -106,54 +135,74 @@ body{
     border-radius: 900px;
 }
 
-button{
+/* =========================
+   BUTTONS
+========================= */
+button {
     padding: 10px 50px;
     font-weight: 500;
     color: #ffffff;
     background-color: #000000;
-    border: none;
-    border-radius: 50px;
     border: 2px solid #00a906;
+    border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
+    transition: all 0.3s ease;
 }
 
-button:hover{
+button:hover {
     background-color: #035706;
 }
 
+/* =========================
+   SECTIONS
+========================= */
 .hero {
-    align-items: center;
-    padding: 100px 10%;
     min-height: 100vh;
-    justify-content: space-between;
+    padding: 100px 10%;
     color: var(--white-color);
-    
+    align-items: center;
+    justify-content: space-between;
 }
-
-
 
 .about {
-    align-items: right;
-    padding: 100px 10%;
     min-height: 100vh;
-    justify-content: space-between;
-    color: var(--white-color);
+    padding: 110px 10%;
     background-color: #000000;
+    color: var(--white-color);
+    align-items: right;
+    justify-content: space-between;
 }
 
-h2{
-    text-align: right;
-    line-height: 1;
-    color: #ffffff;
-    font-size:60px;
-    text-decoration: none;
-    font-family: michroma;
-
+.services {
+    min-height: 100vh;
+    padding: 110px 10%;
+    background-color: #000000;
+    color: var(--white-color);
+    align-items: right;
+    justify-content: space-between;
 }
 
+.servicecontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.service {
+    flex: 1;
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* =========================
+   VIDEO BACKGROUND
+========================= */
 #video-background {
-    position:absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
